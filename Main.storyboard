@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-0E-uzy">
+                                <rect key="frame" x="113" y="268" width="149" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2V-zN-0ok">
+                                <rect key="frame" x="113" y="318" width="149" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drH-YW-6vq">
+                                <rect key="frame" x="84" y="216" width="207" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Quiero una hamburguesa!">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dameUnPaisYUnaHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="SU2-x2-DCy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b8t-0E-uzy" secondAttribute="trailing" constant="113" id="Aen-sT-9bO"/>
+                            <constraint firstItem="P2V-zN-0ok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="BUV-wp-Mqv"/>
+                            <constraint firstItem="P2V-zN-0ok" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="GBr-9o-R8P"/>
+                            <constraint firstItem="b8t-0E-uzy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="NiJ-EV-ovy"/>
+                            <constraint firstItem="drH-YW-6vq" firstAttribute="centerX" secondItem="b8t-0E-uzy" secondAttribute="centerX" id="SXE-Vn-OAn"/>
+                            <constraint firstItem="drH-YW-6vq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="d8a-4z-bRu"/>
+                            <constraint firstItem="drH-YW-6vq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="ffs-dV-vLM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P2V-zN-0ok" secondAttribute="trailing" constant="113" id="gOj-41-iDb"/>
+                            <constraint firstItem="b8t-0E-uzy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="248" id="uX9-J7-4Hg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ObtenerHamburguesa" destination="P2V-zN-0ok" id="siC-nr-V4r"/>
+                        <outlet property="ObtenerPais" destination="b8t-0E-uzy" id="s8T-q6-KIl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>
